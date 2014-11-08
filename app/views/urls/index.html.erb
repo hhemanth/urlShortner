@@ -1,0 +1,12 @@
+<h1>All URL details</h1>
+
+<table>
+
+  <% @urls.each { |u| %>
+    <tr>
+      <td><%= u.url %></td>
+      <td><%= u.short_code %></td>
+    </tr>
+  <% } %>
+
+</table>
