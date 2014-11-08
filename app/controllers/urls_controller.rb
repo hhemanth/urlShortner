@@ -1,5 +1,8 @@
 class UrlsController < ApplicationController
   def show
+    short_code = params[:id]
+    url = ShortUrl.find_by_short_code(short_code).url
+    redirect_to url
   end
 
   def index
